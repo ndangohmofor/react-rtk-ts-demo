@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { ordered, restocked } from "./icecreamSlice";
 
 const IcecreamView = () => {
-  const [value, setValue] = useState(1);
+  const [value, setValue] = useState<number>(1);
   const dispatch = useAppDispatch();
   const numOfIcecreams = useAppSelector(
     (state) => state.iceCream.numOfIcecreams
